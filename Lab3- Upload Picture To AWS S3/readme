@@ -1,1 +1,37 @@
+Lab 3: Lab3- Upload Picture To AWS S3
+Introduction
+In this lab, we will introduce our workshop case study and setup tools on your local Raspberry Pi 4 enable you to upload image data to cloud.
 
+Workshop Case Study
+Every team have been assigned a set of hardware, including a 4G Wi-Fi, a raspberry pi 4, a usb camera, a led light and a micro usb cable.
+
+Step 1 
+Try to locate your group's key, it should be in two parts: access key and secret key.
+
+Step 2 
+There are two API functions that you can use to transmit IoT device data to cloud
+s3_init()	
+	1.S3 is the file server that we need to upload our face recognition image which is your face!! 
+
+	2.S3 is a different server from IoT core data server, do not confuse with them. They are physically different.
+
+	3.S3_init() is the function you need to called at first if you want to upload a image to s3 server.
+
+	4.It returns a client that you need for next step
+
+
+s3_upload(filepath, group, year, month, date, name, client)
+	1.s3_upload(filepath, group, year, month, date, name) is used to transmit image data to AWS s3 server.
+
+	2.It takes arguments:
+		Filepath: the image path in your device.
+		Group: which group you are in
+		Year: which year your time zone
+		Month: which month your time zone
+		Date: which date your time zone
+		Name: the name that you want it be in server, it could be different from your local’s filename
+		Client is the instance that you get from s3_init()
+
+
+
+Step 4 Fill the workspace in MCU.py
