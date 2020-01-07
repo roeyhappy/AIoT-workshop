@@ -2,16 +2,16 @@
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
 import json
 
-def IoT_core_init():
+def IoT_core_init(url,port,root_cert,private_key,device_cert):
     # For certificate based connection
     myMQTTClient = AWSIoTMQTTClient("myClientID")
     
-    myMQTTClient.configureEndpoint("a3afq7zrw2mcf4.ats.iot.cn-north-1.amazonaws.com.cn", 8883)
+    myMQTTClient.configureEndpoint(url, port)
     # For Websocket
     # myMQTTClient.configureEndpoint("YOUR.ENDPOINT", 443)
     # For TLS mutual authentication with TLS ALPN extension
     # myMQTTClient.configureEndpoint("YOUR.ENDPOINT", 443)
-    myMQTTClient.configureCredentials(r'root-CA.crt', r'private.pem.key', r'device.pem.crt')
+    myMQTTClient.configureCredentials(root_cert, private_key, device_cert)
     # For Websocket, we only need to configure the root CA
     # myMQTTClient.configureCredentials("YOUR/ROOT/CA/PATH")
     myMQTTClient.configureOfflinePublishQueueing(-1)  # Infinite offline Publish queueing

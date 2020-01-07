@@ -10,12 +10,17 @@ Try to locate your group's certifications, it should be *.crt and *.key. There a
 
 Step 2 
 There are two API functions that you can use to transmit IoT device data to cloud
-IoT_core_init() 	
+IoT_core_init(url,port,root_cert,private_key,device_cert)	
 	1.This function should be called before any message to transmit
 
-	2.This function takes no arguments, which means it just shows as “wifi_inti()” is fine.
+	2.This function takes 5 arguments：
+		(1) url: the address that your IoT core, should be provided in IoT cloud document
+		(2) port: the port that you connect to cloud, it should be provided in IoT cloud document
+		(3) root_cert: it should be provided in IoT cloud document
+		(4) private_key: it should be provided in IoT cloud document
+		(5) devcie_cert: it should be provided in IoT cloud document
 
-	3.Inside the wifi_init(), there is certification loading and submodule setup.
+	3.Inside the IoT_core_init(), there is certification loading and submodule setup.
 
 	4.It returns a client that you could use to transfer data via the channel.
 
