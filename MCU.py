@@ -1,8 +1,6 @@
-lab3 = 'Lab3-Upload-Picture-To-AWS-S3'
-lab2 = 'Lab2-AWS-IoT-connectivity'
 import time
 import Lab3UploadPictureToAWSS3.s3
-#import lab2.connectivity
+import Lab2AWSIoTconnectivity.connectivity
 
 
 def initialize_connectivity():
@@ -24,6 +22,7 @@ def TransmitIoTData():
 def StartMeasureImage():
 #Put your Start your camera captureing work here
     print("start camera not OK")
+    return False
 
 
 def loop():
