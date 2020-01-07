@@ -1,6 +1,8 @@
+lab3 = 'Lab3-Upload-Picture-To-AWS-S3'
+lab2 = 'Lab2-AWS-IoT-connectivity'
 import time
-import Lab3- Upload Picture To AWS S3/s3
-import connectivity
+import Lab3UploadPictureToAWSS3.s3
+#import lab2.connectivity
 
 
 def initialize_connectivity():
