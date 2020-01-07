@@ -1,14 +1,14 @@
 import boto3
 constant1 = 'efd/' 
 
-def s3_init():
+def s3_init(region, access_key, secret_key):
     # Do not hard code credentials
     s3 = boto3.client(
     's3',
-    region_name='cn-north-1',
+    region_name=region,
     # Hard coded strings as credentials, not recommended.
-    aws_access_key_id='AKIA3NC37QVN3WCEFJGR',
-    aws_secret_access_key='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'
+    aws_access_key_id=access_key,
+    aws_secret_access_key=secret_key
     )
     return s3
 

@@ -10,12 +10,15 @@ Try to locate your group's key, it should be in two parts: access key and secret
 
 Step 2 
 There are two API functions that you can use to transmit IoT device data to cloud
-s3_init()	
+s3_init(region, access_key, secret_key)	
 	1.S3 is the file server that we need to upload our face recognition image which is your face!! 
 
 	2.S3 is a different server from IoT core data server, do not confuse with them. They are physically different.
 
-	3.S3_init() is the function you need to called at first if you want to upload a image to s3 server.
+	3.s3_init(region, access_key, secret_key) is the function you need to called at first if you want to upload a image to s3 server.
+		(1) region: it should be provided in cloud document
+		(2) acess_key: it shoud be provided in cloud document
+		(3) private_key: it should be provided in cloud document
 
 	4.It returns a client that you need for next step
 
