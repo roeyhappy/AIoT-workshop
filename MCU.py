@@ -15,11 +15,14 @@ def facedetection_loop():
     image_name = 'None'
     
 ### Your Beautyful work should be under!!!!!!!
+    faceAlgorithm = 'your face detection algorithm put here'
+    face_pictures = 'your face pictures should be here'
+
+### Do not cross over me, thanks!!!!!!!!!!!!!! 
     result,image_name = faceDetect.face_detection_loop(
-        'your face detection algorithm put here',
-        'your video stream should be here'
-    )
-### Do not cross over me, thanks!!!!!!!!!!!!!!   
+        faceAlgorithm,
+        face_pictures
+    )  
     print( result,image_name)  
     return result, image_name
     
@@ -29,25 +32,23 @@ def facedetection_loop():
 ############ step 2 try to upload your detected image to S3 server
 def initialize_s3():
     global s3_client
-    
-    
+     
 ### Your Beautyful work should be under!!!!!!!
     region = 'put your region name here'
     access_key = 'put your access_key here'
     secret_key = 'put your secret_key here'
-    s3_client = s3server.s3_init(region, access_key, secret_key)
+    
 ### Do not cross over me, thanks!!!!!!!!!!!!!! 
-
-
+    s3_client = s3server.s3_init(region, access_key, secret_key)
     print("initiallize s3 connectivity done")  
     
 def TransmitImageData():
 ### Your Beautyful work should be under!!!!!!!
     imageName = 'the image you captured in step 1'
     groupid = 'which group you are in??'
-    s3server.s3_upload(imageName, group, s3_client)
-
+    
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
+    s3server.s3_upload(imageName, group, s3_client)
     print("Transmit image data done")
 
 ############# step 2 DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -62,9 +63,13 @@ def initialize_connectivity():
     root_cert= 'put your root certification location here'
     private_key= 'put your private key here'
     device_cert= 'put your device certification here'
-    iot_core_client = IoTcore.IoT_core_init(endpoint,port,root_cert,private_key,device_cert)
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
-
+    iot_core_client = IoTcore.IoT_core_init(endpoint,
+        port,
+        root_cert,
+        private_key,
+        device_cert
+    )
     print("initiallize connectivity done")
     
 def TransmitIoTData():
@@ -75,7 +80,7 @@ def TransmitIoTData():
     group_member_count = 'How many members in your group'
     member_names = 'you name, you team member 1 name, ...'
     blessing = 'what do you want to say, be careful, everyone can see ^_^'
-
+### Do not cross over me, thanks!!!!!!!!!!!!!!
     transmit_message_to_cloud(mytopicheader, 
         image_name, 
         groupid, 
@@ -84,8 +89,6 @@ def TransmitIoTData():
         blessing, 
         iot_core_client
     )
-### Do not cross over me, thanks!!!!!!!!!!!!!!
-
     print("transmit IoT Data not OK")
 
 ############# step 3 DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
