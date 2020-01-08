@@ -6,9 +6,7 @@ import Lab1EdgeFaceDetection.facedetection
 ############ step 1 Start your show!!! face detection -----------I am beauty sperator-----
 def initialize_facedetection():
     global faceDetectAlgorithm, video_stream
-#### Put your facedetection init down
     faceDetectAlgorithm, video_stream = Lab1EdgeFaceDetection.facedetection.initialize_facedetection()
-#### Put your facedetection init up 
     print("initiallize facedetection OK")
     
 def facedetection_loop():
