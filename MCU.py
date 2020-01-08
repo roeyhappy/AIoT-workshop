@@ -3,11 +3,11 @@ import Lab3UploadPictureToAWSS3.s3
 import Lab2AWSIoTconnectivity.connectivity
 import Lab1EdgeFaceDetection.facedetection
 
-############ step 1 try to start your camera and detect a real human face
+############ step 1 Start your show!!! face detection -----------I am beauty sperator-----
 def initialize_facedetection():
-    global faceCascade, cap
+    global faceDetectAlgorithm, video_stream
 #### Put your facedetection init down
-    
+    faceDetectAlgorithm, video_stream = Lab1EdgeFaceDetection.facedetection.initialize_facedetection()
 #### Put your facedetection init up 
     print("initiallize facedetection OK")
     
@@ -15,9 +15,13 @@ def facedetection_loop():
     global result, image_name
     result = False
     image_name = 'None'
-### Put your facedetection loop down
-
-### Put your facedetection loop up    
+    
+### Your Beautyful work should be under
+    result,image_name = Lab1EdgeFaceDetection.facedetection.face_detection_loop(
+        'your face detection algorithm put here',
+        'your video stream should be here'
+    )
+### Do not cross over me, thanks!!!!!!!!!!!!!!   
     print( result,image_name)  
     return result, image_name
     
