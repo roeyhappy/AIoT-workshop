@@ -35,4 +35,4 @@ def face_detection_loop(faceCascade, cap):
         result = True
         cv2.imshow('imshow',img)
     
-    return image_name
+    return result,image_name
