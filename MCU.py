@@ -1,12 +1,16 @@
 import time
 import Lab3UploadPictureToAWSS3.s3
 import Lab2AWSIoTconnectivity.connectivity
-#import Lab1EdgeFaceDetection.facedetection
+import Lab1EdgeFaceDetection.facedetection
 
 ############ step 1 try to start your camera and detect a real human face
 def initialize_facedetection():
 #### Put your facedetection init down
-
+    global facecade,cap
+    
+    facecade,cap = Lab1EdgeFaceDetection.facedetection.initialize_facedetection()
+    print ('I am done ')
+    return
 #### Put your facedetection init up 
     print("initiallize facedetection Not OK")
     
@@ -15,9 +19,10 @@ def facedetection_loop():
     result = False
     image_name = 'None'
 ### Put your facedetection loop down
-    
+    #facecade,cap = Lab1EdgeFaceDetection.facedetection.initialize_facedetection()
+    result,image_name = Lab1EdgeFaceDetection.facedetection.face_detection_loop(facecade,cap)
 ### Put your facedetection loop up    
-    print( "facedetection loop done")  
+    print( result,image_name)  
     return result, image_name
     
 ############# step 1 DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
