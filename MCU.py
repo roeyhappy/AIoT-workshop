@@ -5,6 +5,7 @@ import Lab1EdgeFaceDetection.facedetection
 
 ############ step 1 try to start your camera and detect a real human face
 def initialize_facedetection():
+    global faceCascade, cap
 #### Put your facedetection init down
     
 #### Put your facedetection init up 
