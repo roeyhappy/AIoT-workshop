@@ -1,4 +1,6 @@
 import boto3
+import datetime
+import time
 constant1 = 'efd/' 
 
 def s3_init(region, access_key, secret_key):
@@ -13,5 +15,9 @@ def s3_init(region, access_key, secret_key):
     return s3
 
  
-def s3_upload(filepath, group, year, month, date, name, client):
+def s3_upload(filepath, group, name, client):
+    now_time = datetime.datetime.now()
+    year = now_time.strftime("%Y")
+    month = now_time.strftime("%m")
+    date = now_time.strftime("%d")
     response = client.upload_file(filepath, 'pgiot-s3-test', constant1 + group + '/' + year + '/' + month + '/' + date + '/' + name, ExtraArgs={'ACL': 'public-read'})

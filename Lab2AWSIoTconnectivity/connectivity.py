@@ -1,6 +1,8 @@
 # Import SDK packages
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
 import json
+import datetime
+import time
 
 def IoT_core_init(url,port,root_cert,private_key,device_cert):
     # For certificate based connection
@@ -21,8 +23,33 @@ def IoT_core_init(url,port,root_cert,private_key,device_cert):
     return myMQTTClient
     
     
-def transmit_message_to_cloud(mytopicheader, mypayload, client):
+def transmit_message_to_cloud(mytopicheader, image_name, groupid, group_member_count, member_names,blessing, client):
+    now_time = datetime.datetime.now()
+    group = groupid + '/'
+    year = now_time.strftime("%Y") + '/'
+    month = now_time.strftime("%m") + '/'
+    date = now_time.strftime("%d") + '/'
+    s3_pic_url =  group + year + month + date
+    picurl = s3_pic_url + image_name
+    
+    now_time = datetime.datetime.utcnow()
+    publish_time = now_time.strftime("%Y-%m-%dT%H:%M:%S")
+    ct = time.time()
+    date_ms = (ct - int(ct))*1000
+    publish_time_2 = "%s.%03d" %(publish_time, date_ms)
+    
+    mypayload = {
+        "groupId": groupid,
+        "memberCount": group_member_count,
+        "memberNames": member_names,
+        "eventId": "1",
+        "pictureId": picurl,
+        "publishTime": publish_time_2,
+        "blessings":blessing
+        }
+       
+    
     topicbody = json.dumps(mypayload)
-    myMQTTClient.connect()
-    myMQTTClient.publish(mytopicheader, topicbody, 0)
-    myMQTTClient.disconnect()
+    client.connect()
+    client.publish(mytopicheader, topicbody, 0)
+    #client.disconnect()
