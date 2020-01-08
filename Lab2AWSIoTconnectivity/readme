@@ -7,34 +7,14 @@ Every team have been assigned a set of hardware, including a 4G Wi-Fi, a raspber
 
 Step 1 
 Try to locate your group's certifications, it should be *.crt and *.key. There are three of them.
-
+	
 Step 2 
-There are two API functions that you can use to transmit IoT device data to cloud
-IoT_core_init(url,port,root_cert,private_key,device_cert)	
-	1.This function should be called before any message to transmit
 
-	2.This function takes 5 arguments：
-		(1) url: the address that your IoT core, should be provided in IoT cloud document
-		(2) port: the port that you connect to cloud, it should be provided in IoT cloud document
-		(3) root_cert: it should be provided in IoT cloud document
-		(4) private_key: it should be provided in IoT cloud document
-		(5) devcie_cert: it should be provided in IoT cloud document
+Try to call IoT_core_init(url,port,root_cert,private_key,device_cert) 
+in initialize_connectivity() in MCU.py
 
-	3.Inside the IoT_core_init(), there is certification loading and submodule setup.
+Step 3
+Try to call transmit_message_to_cloud(mytopicheader, image_name, groupid, group_member_count, member_names,blessing, client)
+in TransmitIoTData() in MCU.py
 
-	4.It returns a client that you could use to transfer data via the channel.
-
-transmit_message_to_cloud(mytopicheader, mypayload, client)
-	1.This function is used to transmit message to IoT cloud.
-
-	2.It takes two arguments mytopicheader and mypayload. 
-
-	3.Mytopicheader is the format like “pg/{thingName}/data”
-
-	4.Mypayload is the format of json.
-
-	5.Client is the instance that you get from IoT_core_int()
-
-
-
-Step 4 Fill the workspace in MCU.py
+Step 4 Run MCU.py
