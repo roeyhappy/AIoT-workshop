@@ -10,5 +10,8 @@ you need to aware that this fucntion return two varibles:
 + **video_stream**: this is the video that camera captured
 ### facedetection_loop()
 This function is used for trigger the camera shooting and pass the video into our algorithm. Do you remember the last function **initialize_facedetection()** provides you? **You need to fill in the algorithm and video captured varibles**, for example, your working zone looks like this: 
-+  Your Beautyful work should be under!!!!!!! faceAlgorithm = 'your face detection algorithm put here' face_pictures = 'your face pictures should be here' Do not cross over me, thanks!!!!!!!!!!!!!! 
++  Your Beautyful work should be under!!!!!!!
+    + faceAlgorithm = 'your face detection algorithm put here' 
+    + face_video_stream = 'your face pictures should be here' 
++ Do not cross over me, thanks!!!!!!!!!!!!!! 
 

@@ -16,12 +16,12 @@ def facedetection_loop():
     
 ### Your Beautyful work should be under!!!!!!!
     faceAlgorithm = 'your face detection algorithm put here'
-    face_pictures = 'your face pictures should be here'
+    face_video_stream = 'your face pictures should be here'
 
 ### Do not cross over me, thanks!!!!!!!!!!!!!! 
     result,image_name = faceDetect.face_detection_loop(
         faceAlgorithm,
-        face_pictures
+        face_video_stream
     )  
     print( result,image_name)  
     return result, image_name
