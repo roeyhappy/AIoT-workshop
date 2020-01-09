@@ -82,6 +82,6 @@ This function is used to transmit message to IoT core. There are four varibles y
 3. member_names is the names in your group, for example, **member_names = 'roy, tom, ben'**
 4. blessing is your imagination.
 
-** Step 3 is done !!!!
+** Step 3 is done !!!!**
 
 
