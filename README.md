@@ -15,7 +15,8 @@ This function is used for trigger the camera shooting and pass the video into ou
     + face_video_stream = 'your face pictures should be here' 
 + Do not cross over me, thanks!!!!!!!!!!!!!! 
 
-After you finish your work, you can run MCU.py by press Run button in IDE or python3 MCU.py in command line. You can see a windows pop up, and if you show your face in the camera, a blue squre will capture your face,you can checkout ![example](https://github.com/roeyhappy/AIoT-workshop/blob/master/20200109105148.jpg), after you set up your most beautyful face, you press **Enter**, and the picture will captured and saved in local folder. Your step 1 is done!!!
+After you finish your work, you can run MCU.py by press Run button in IDE or python3 MCU.py in command line. You can see a windows pop up, and if you show your face in the camera, a blue squre will capture your face,you can checkout ![example](https://github.com/roeyhappy/AIoT-workshop/blob/master/20200109105148.jpg)
+After you set up your most beautyful face, you press **Enter**, and the picture will captured and saved in local folder. Your step 1 is done!!!
 
 ## Step 2: Transfer your face image to S3 server in AWS
 In this step, there are two functions provided to you **MCU.py**
