@@ -61,3 +61,9 @@ There are 5 varibles that you need to work with:
     + device_cert= 'put your device certification here'   
 + Do not cross over me, thanks!!!!!!!!!!!!!!
 
+1. endpoint is the address of IoT core, this information is important, it will be in a seperate document.
+2. port is a number that you need to connect to IoT core, it will be in a seperate document.
+3. root_cert is used to identify the server is the real server.
+4. private_key is used to unlock the message that received from servers.
+5. device_cert is used to let server identify the device is the real device.
+
