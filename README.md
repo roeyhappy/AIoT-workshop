@@ -14,4 +14,5 @@ This function is used for trigger the camera shooting and pass the video into ou
     + faceAlgorithm = 'your face detection algorithm put here' 
     + face_video_stream = 'your face pictures should be here' 
 + Do not cross over me, thanks!!!!!!!!!!!!!! 
+After you finish your work, you can run MCU.py by press Run button in IDE or python3 MCU.py in command line. You can see a windows pop up, and if you show your face in the camera, a blue squre will capture your face, ![](20200109105148.png '''')
 
