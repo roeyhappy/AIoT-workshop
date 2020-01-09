@@ -51,7 +51,7 @@ Then your step 2 is done!!!!!!!!!!!!!!!!!!!!!!!!
 ## Step 3: Transfer your IoT Data to IoT core in AWS
 An face image is not enough to identify youself, you need extra information to show youself. And the information will trigger the publich to GCIT Family in Golden Pocket. There are two function you need to work with.
 ### initialize_connectivity()
-There are 5 varibles that you need to work with:
+This function is used to initialize the IoT core connection. There are 5 varibles that you need to work with:
 
 +  Your Beautyful work should be under!!!!!!!
     + endpoint = 'put your endpoint here'
@@ -66,4 +66,22 @@ There are 5 varibles that you need to work with:
 3. root_cert is used to identify the server is the real server.
 4. private_key is used to unlock the message that received from servers.
 5. device_cert is used to let server identify the device is the real device.
+
+### TransmitIoTData()
+This function is used to transmit message to IoT core. There are four varibles you need to work with:
+
++  Your Beautyful work should be under!!!!!!!
+    + groupid = 'which group you are in??'
+    + group_member_count = 'How many members in your group'
+    + member_names = 'you name, you team member 1 name, ...'
+    + blessing = 'what do you want to say, be careful, everyone can see ^_^'   
++ Do not cross over me, thanks!!!!!!!!!!!!!!
+
+1. groupid is the group number that you are in, for example, you are in group 1, you should write your code as **groupid = 'group001'**
+2. group_member_count is the information that you want to tell IoT core how many group members in your group, for example, **group_member_count = '3'**
+3. member_names is the names in your group, for example, **member_names = 'roy, tom, ben'**
+4. blessing is your imagination.
+
+** Step 3 is done !!!!
+
 
