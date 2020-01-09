@@ -48,3 +48,16 @@ This function is used to transmit captured image (do you remember what you did i
 
 Then your step 2 is done!!!!!!!!!!!!!!!!!!!!!!!!
 
+## Step 3: Transfer your IoT Data to IoT core in AWS
+An face image is not enough to identify youself, you need extra information to show youself. And the information will trigger the publich to GCIT Family in Golden Pocket. There are two function you need to work with.
+### initialize_connectivity()
+There are 5 varibles that you need to work with:
+
++  Your Beautyful work should be under!!!!!!!
+    + endpoint = 'put your endpoint here'
+    + port = 'put your port number here'
+    + root_cert= 'put your root certification location here'
+    + private_key= 'put your private key here'
+    + device_cert= 'put your device certification here'   
++ Do not cross over me, thanks!!!!!!!!!!!!!!
+
