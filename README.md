@@ -30,7 +30,7 @@ This function is used to initialize the s3 server, there are three varibles you 
     + secret_key = 'put your secret_key here'
 + Do not cross over me, thanks!!!!!!!!!!!!!! 
 
-region is the location of s3 server, for now it should be 'cn-north-1'
-access_key is the 
-
+1. region is the location of s3 server, for now it should be 'cn-north-1'
+2. access_key is the key that
+3. secret key is the key that
 
