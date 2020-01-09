@@ -31,6 +31,20 @@ This function is used to initialize the s3 server, there are three varibles you 
 + Do not cross over me, thanks!!!!!!!!!!!!!! 
 
 1. region is the location of s3 server, for now it should be 'cn-north-1'
-2. access_key is the key that
-3. secret key is the key that
+2. access_key is the id key that access the aws S3
+3. secret key is the password key that access the aws S3
+
+All of them, should not expose to public, and it will not provided in this document, you will receive a secure source that store these.
+### TransmitImageData()
+This function is used to transmit captured image (do you remember what you did in step 1 when you press Enter key ??), there are two varibles you need to work with:
+
++  Your Beautyful work should be under!!!!!!!
+    + imageName = 'the image you captured in step 1'
+    + groupid = 'which group you are in??'    
++ Do not cross over me, thanks!!!!!!!!!!!!!!
+
+1. imageName is the image that you captured in step 1 when you press Enter key, it is stored in your local folder named as "202001XXXXXXXXXX.jpg", you can either put imageName = "202001XXXXXXXXXX.jpg" or imageName = image_name
+2. groupid is the group number that you are in, for example, you are in group 1, you should write your code as groupid = 'group001'
+
+Then your step 2 is done!!!!!!!!!!!!!!!!!!!!!!!!
 
