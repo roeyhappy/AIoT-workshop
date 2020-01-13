@@ -37,9 +37,9 @@ def initialize_s3():
     region = 'put your region name here'
     access_key = 'put your access_key here'
     secret_key = 'put your secret_key here'
-    
+    if secret_key != 'put your secret_key here':
 ### Do not cross over me, thanks!!!!!!!!!!!!!! 
-    s3_client = s3server.s3_init(region, access_key, secret_key)
+        s3_client = s3server.s3_init(region, access_key, secret_key)
     print("initiallize s3 connectivity done")  
     
 def TransmitImageData():
@@ -63,13 +63,14 @@ def initialize_connectivity():
     root_cert= 'put your root certification location here'
     private_key= 'put your private key here'
     device_cert= 'put your device certification here'
+    if endpoint != 'put your endpoint here':
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
-    iot_core_client = IoTcore.IoT_core_init(endpoint,
-        port,
-        root_cert,
-        private_key,
-        device_cert
-    )
+        iot_core_client = IoTcore.IoT_core_init(endpoint,
+            port,
+            root_cert,
+            private_key,
+            device_cert
+        )
     print("initiallize connectivity done")
     
 def TransmitIoTData():
