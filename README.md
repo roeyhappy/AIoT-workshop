@@ -35,6 +35,8 @@ This function is used to initialize the s3 server, there are three varibles you 
 3. secret key is the password key that access the aws S3
 
 All of them, should not expose to public, and it will not provided in this document, you will receive a secure source that store these.
+
+Then you need to go into **\AIoT-workshop\Lab2UploadPictureToAWSS3\s3.py** locate function  **s3_init(region, access_key, secret_key)** you need to fix the secret key parameter.
 ### TransmitImageData()
 This function is used to transmit captured image (do you remember what you did in step 1 when you press Enter key ??), there are two varibles you need to work with:
 
