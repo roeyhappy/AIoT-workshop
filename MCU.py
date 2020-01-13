@@ -14,9 +14,9 @@ def facedetection_loop():
     result = False
     image_name = 'None'
     
-### Your Beautyful work should be under!!!!!!!
-    faceAlgorithm = 'your face detection algorithm put here'
-    face_video_stream = 'your face pictures should be here'
+### Your Beautyful work example !!!!!!!
+    faceAlgorithm = faceDetectAlgorithm
+    face_video_stream = video_stream
 
 ### Do not cross over me, thanks!!!!!!!!!!!!!! 
     result,image_name = faceDetect.face_detection_loop(
