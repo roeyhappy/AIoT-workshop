@@ -82,16 +82,14 @@ def TransmitIoTData():
     member_names = 'you name, you team member 1 name, ...'
     blessing = 'what do you want to say, be careful, everyone can see ^_^'
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
+
     mytopicheader = "pg/efd/" + thingname + "/data"
 
-    transmit_message_to_cloud(mytopicheader, 
-        image_name, 
-        groupid, 
-        group_member_count, 
-        member_names,
-        blessing, 
-        iot_core_client
-    )
+### Your Beautyful work should be under!!!!!!!
+## You need to to Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
+    
+### Do not cross over me, thanks!!!!!!!!!!!!!!
+
     print("transmit IoT Data not OK")
 
 ############# step 3 DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
