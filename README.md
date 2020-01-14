@@ -4,27 +4,27 @@
 
 In this step, there are two functions provided to you in **MCU.py**
 ### initialize_facedetection()
-This function is used for initiallize camera hardware and face detection algorithm, ***you do not have to do anything with this fucntion***
-you need to aware that this fucntion return two varibles:
+This function is used for initialize camera hardware and face detection algorithm, ***you do not have to do anything with this function***
+you need to aware that this function return two variables:
 + **faceDetectAlgorithm**: this is a algorithm that used to detect a human face 
 + **video_stream**: this is the video that camera captured
 ### facedetection_loop()
-This function is used for trigger the camera shooting and pass the video into our algorithm. Do you remember the last function **initialize_facedetection()** provides you? **You need to fill in the algorithm and video captured varibles**, for example, your working zone looks like this: ***you do not have to do anything with this fucntion*** 
-+  Your Beautyful work example!!!!!!!
+This function is used for trigger the camera shooting and pass the video into our algorithm. Do you remember the last function **initialize_facedetection()** provides you? **You need to fill in the algorithm and video captured variables**, for example, your working zone looks like this: ***you do not have to do anything with this function*** 
++  Your Beautiful work example!!!!!!!
     + faceAlgorithm = faceDetectAlgorithm 
     + face_video_stream = video_stream
 + Do not cross over me, thanks!!!!!!!!!!!!!! 
 
-After you finish your work, you can run MCU.py by press Run button in IDE or python3 MCU.py in command line. You can see a windows pop up, and if you show your face in the camera, a blue squre will capture your face,you can checkout ![example](https://github.com/roeyhappy/AIoT-workshop/blob/master/20200109105148.jpg)
+After you finish your work, you can run MCU.py by press Run button in IDE or python3 MCU.py in command line. You can see a windows pop up, and if you show your face in the camera, a blue square will capture your face, you can checkout ![example](https://github.com/roeyhappy/AIoT-workshop/blob/master/20200109105148.jpg)
 
-After you set up your most beautyful face, you press **Enter**, and the picture will captured and saved in local folder. Your step 1 is done!!!
+After you set up your most beautiful face, you press **Enter**, and the picture will captured and saved in local folder. Your step 1 is done!!!
 
 ## Step 2: Transfer your face image to S3 server in AWS
 In this step, there are two functions provided to you **MCU.py**
 ### initialize_s3()
-This function is used to initialize the s3 server, there are three varibles you need to work with:
+This function is used to initialize the s3 server, there are three variables you need to work with:
 
-+  Your Beautyful work should be under!!!!!!!
++  Your Beautiful work should be under!!!!!!!
     + region = 'put your region name here'
     + access_key = 'put your access_key here'
     + secret_key = 'put your secret_key here'
@@ -38,9 +38,9 @@ All of them, should not expose to public, and it will not provided in this docum
 
 Then you need to go into **\AIoT-workshop\Lab2UploadPictureToAWSS3\s3.py** locate function  **s3_init(region, access_key, secret_key)** you need to fix the secret key parameter.
 ### TransmitImageData()
-This function is used to transmit captured image (do you remember what you did in step 1 when you press Enter key ??), there are two varibles you need to work with:
+This function is used to transmit captured image (do you remember what you did in step 1 when you press Enter key ??), there are two variables you need to work with:
 
-+  Your Beautyful work should be under!!!!!!!
++  Your Beautiful work should be under!!!!!!!
     + imageName = 'the image you captured in step 1'
     + groupid = 'which group you are in??'    
 + Do not cross over me, thanks!!!!!!!!!!!!!!
@@ -51,11 +51,11 @@ This function is used to transmit captured image (do you remember what you did i
 Then your step 2 is done!!!!!!!!!!!!!!!!!!!!!!!!
 
 ## Step 3: Transfer your IoT Data to IoT core in AWS
-An face image is not enough to identify youself, you need extra information to show youself. And the information will trigger the publich to GCIT Family in Golden Pocket. There are two function you need to work with.
+An face image is not enough to identify yourself, you need extra information to show youself. And the information will trigger the publish to GCIT Family in Golden Pocket. There are two function you need to work with.
 ### initialize_connectivity()
-This function is used to initialize the IoT core connection. There are 5 varibles that you need to work with:
+This function is used to initialize the IoT core connection. There are 5 variables that you need to work with:
 
-+  Your Beautyful work should be under!!!!!!!
++  Your Beautiful work should be under!!!!!!!
     + endpoint = 'put your endpoint here'
     + port = 'put your port number here'
     + root_cert= 'put your root certification location here'
@@ -63,16 +63,16 @@ This function is used to initialize the IoT core connection. There are 5 varible
     + device_cert= 'put your device certification here'   
 + Do not cross over me, thanks!!!!!!!!!!!!!!
 
-1. endpoint is the address of IoT core, this information is important, it will be in a seperate document.
-2. port is a number that you need to connect to IoT core, it will be in a seperate document.
+1. endpoint is the address of IoT core, this information is important, it will be in a separate document.
+2. port is a number that you need to connect to IoT core, it will be in a separate document.
 3. root_cert is used to identify the server is the real server.
 4. private_key is used to unlock the message that received from servers.
 5. device_cert is used to let server identify the device is the real device.
 
 ### TransmitIoTData()
-This function is used to transmit message to IoT core. There are four varibles you need to work with:
+This function is used to transmit message to IoT core. There are four variables you need to work with:
 
-+  Your Beautyful work should be under!!!!!!!
++  Your Beautiful work should be under!!!!!!!
     + thingname = 'your thing name should be here'
     + groupid = 'which group you are in??'
     + group_member_count = 'How many members in your group'
@@ -80,7 +80,7 @@ This function is used to transmit message to IoT core. There are four varibles y
     + blessing = 'what do you want to say, be careful, everyone can see ^_^'   
 + Do not cross over me, thanks!!!!!!!!!!!!!!
 
-+ Your Beautyful work should be under!!!!!!!
++ Your Beautiful work should be under!!!!!!!
     + You need to to Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
 + Do not cross over me, thanks!!!!!!!!!!!!!!
 
