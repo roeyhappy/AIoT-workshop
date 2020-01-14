@@ -80,10 +80,9 @@ This function is used to transmit message to IoT core. There are four varibles y
     + blessing = 'what do you want to say, be careful, everyone can see ^_^'   
 + Do not cross over me, thanks!!!!!!!!!!!!!!
 
-### Your Beautyful work should be under!!!!!!!
-You need to to Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
-    
-### Do not cross over me, thanks!!!!!!!!!!!!!!
++ Your Beautyful work should be under!!!!!!!
+    + You need to to Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
++ Do not cross over me, thanks!!!!!!!!!!!!!!
 
 1. groupid is the group number that you are in, for example, you are in group 1, you should write your code as **groupid = 'group001'**
 2. group_member_count is the information that you want to tell IoT core how many group members in your group, for example, **group_member_count = '3'**
