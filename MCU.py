@@ -48,7 +48,7 @@ def TransmitImageData():
     groupid = 'which group you are in??'
     
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
-    s3server.s3_upload(imageName, group, s3_client)
+    s3server.s3_upload(imageName, groupid, s3_client)
     print("Transmit image data done")
 
 ############# step 2 DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
