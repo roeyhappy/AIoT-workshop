@@ -3,7 +3,7 @@ import Lab2UploadPictureToAWSS3.s3 as s3server
 import Lab3AWSIoTconnectivity.connectivity as IoTcore
 import Lab1EdgeFaceDetection.facedetection as faceDetect
 
-############ step 1 Start your show!!! face detection -----------I am beauty sperator-----
+############ step 1 Start your show!!! face detection -----------I am beautiful sperator-----
 def initialize_facedetection():
     global faceDetectAlgorithm, video_stream
     faceDetectAlgorithm, video_stream = faceDetect.initialize_facedetection()
@@ -14,7 +14,7 @@ def facedetection_loop():
     result = False
     image_name = 'None'
     
-### Your Beautyful work example !!!!!!!
+### Your Beautiful work example !!!!!!!
     faceAlgorithm = faceDetectAlgorithm
     face_video_stream = video_stream
 
@@ -45,7 +45,7 @@ def initialize_s3():
 def TransmitImageData():
 ### Your Beautyful work should be under!!!!!!!
     imageName = 'the image you captured in step 1'
-    groupid = 'which group you are in??'
+    groupid = 'which group are you in??'
     
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
     s3server.s3_upload(imageName, groupid, s3_client)
@@ -77,20 +77,20 @@ def TransmitIoTData():
 
 ### Your Beautyful work should be under!!!!!!!
     thingname = 'your thing name should be here'
-    groupid = 'which group you are in??'
+    groupid = 'which group are you in??'
     group_member_count = 'How many members in your group'
-    member_names = 'you name, you team member 1 name, ...'
+    member_names = 'your name, your team member 1 name, ...'
     blessing = 'what do you want to say, be careful, everyone can see ^_^'
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
 
     mytopicheader = "pg/efd/" + thingname + "/data"
 
-### Your Beautyful work should be under!!!!!!!
-## You need to to Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
+### Your Beautiful work should be under!!!!!!!
+## You need to call Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
     
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
 
-    print("transmit IoT Data not OK")
+    print("transmit IoT Data OK")
 
 ############# step 3 DONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     
