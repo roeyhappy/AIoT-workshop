@@ -73,6 +73,7 @@ This function is used to initialize the IoT core connection. There are 5 varible
 This function is used to transmit message to IoT core. There are four varibles you need to work with:
 
 +  Your Beautyful work should be under!!!!!!!
+    + thingname = 'your thing name should be here'
     + groupid = 'which group you are in??'
     + group_member_count = 'How many members in your group'
     + member_names = 'you name, you team member 1 name, ...'

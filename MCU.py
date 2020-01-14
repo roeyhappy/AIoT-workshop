@@ -74,14 +74,16 @@ def initialize_connectivity():
     print("initiallize connectivity done")
     
 def TransmitIoTData():
-    mytopicheader = "pg/efd/d-1a2d3a2ea4f84eb6b8197a3a3e4a6ad8:2eaa3bcbce2d49f0adf7b3edc3cc4638:sn001/data"
 
 ### Your Beautyful work should be under!!!!!!!
+    thingname = 'your thing name should be here'
     groupid = 'which group you are in??'
     group_member_count = 'How many members in your group'
     member_names = 'you name, you team member 1 name, ...'
     blessing = 'what do you want to say, be careful, everyone can see ^_^'
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
+    mytopicheader = "pg/efd/" + thingname + "/data"
+
     transmit_message_to_cloud(mytopicheader, 
         image_name, 
         groupid, 
