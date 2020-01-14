@@ -81,7 +81,7 @@ This function is used to transmit message to IoT core. There are four varibles y
 + Do not cross over me, thanks!!!!!!!!!!!!!!
 
 ### Your Beautyful work should be under!!!!!!!
-## You need to to Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
+You need to to Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
     
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
 
