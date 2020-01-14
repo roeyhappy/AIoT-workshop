@@ -17,7 +17,7 @@ This function is used for trigger the camera shooting and pass the video into ou
 
 After you finish your work, you can run MCU.py by press Run button in IDE or python3 MCU.py in command line. You can see a windows pop up, and if you show your face in the camera, a blue square will capture your face, you can checkout ![example](https://github.com/roeyhappy/AIoT-workshop/blob/master/20200109105148.jpg)
 
-After you set up your most beautiful face, you press **Enter**, and the picture will captured and saved in local folder. Your step 1 is done!!!
+After you set up your beautiful face, you press **Enter**, and the picture will captured and saved in local folder. Your step 1 is done!!!
 
 ## Step 2: Transfer your face image to S3 server in AWS
 In this step, there are two functions provided to you **MCU.py**
@@ -34,7 +34,7 @@ This function is used to initialize the s3 server, there are three variables you
 2. access_key is the id key that access the aws S3
 3. secret key is the password key that access the aws S3
 
-All of them, should not expose to public, and it will not provided in this document, you will receive a secure source that store these.
+All of them, should not expose to public, and it will not be provided in this document, you can find this information in Raspberry /home/pi/AIoTlab/paramters.txt.
 
 Then you need to go into **\AIoT-workshop\Lab2UploadPictureToAWSS3\s3.py** locate function  **s3_init(region, access_key, secret_key)** you need to fix the secret key parameter.
 ### TransmitImageData()
@@ -68,6 +68,7 @@ This function is used to initialize the IoT core connection. There are 5 variabl
 3. root_cert is used to identify the server is the real server.
 4. private_key is used to unlock the message that received from servers.
 5. device_cert is used to let server identify the device is the real device.
+you can find all this information in Raspberry /home/pi/AIoTlab/
 
 ### TransmitIoTData()
 This function is used to transmit message to IoT core. There are four variables you need to work with:
@@ -81,7 +82,7 @@ This function is used to transmit message to IoT core. There are four variables 
 + Do not cross over me, thanks!!!!!!!!!!!!!!
 
 + Your Beautiful work should be under!!!!!!!
-    + You need to to Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
+    + You need to call Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
 + Do not cross over me, thanks!!!!!!!!!!!!!!
 
 1. groupid is the group number that you are in, for example, you are in group 1, you should write your code as **groupid = 'group001'**
@@ -91,5 +92,8 @@ This function is used to transmit message to IoT core. There are four variables 
 5. the last step is you need to go into Lab3AWSIoTconnectivity and use transmit_message_to_cloud() function to transmit your data
 
 **Step 3 is done !!!!**
+
+## Step 4: How to push a notification to Goldpocket from Lambda
+In this step, there is no hands-on work to do.
 
 
