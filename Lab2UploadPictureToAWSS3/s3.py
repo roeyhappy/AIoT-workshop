@@ -9,7 +9,7 @@ def s3_init(region, access_key, secret_key):
     's3',
     region_name=region,
     aws_access_key_id=access_key,
-    #aws_secret_access_key=???
+    aws_secret_access_key=secret_key
     )
     return s3
 
