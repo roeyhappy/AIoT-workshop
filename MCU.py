@@ -87,7 +87,14 @@ def TransmitIoTData():
 
 ### Your Beautiful work should be under!!!!!!!
 ## You need to call Lab3AWSIoTconnectivity transmit_message_to_cloud() function to transmit your data
-    
+    IoTcore.transmit_message_to_cloud(mytopicheader, 
+        image_name, 
+        groupid, 
+        group_member_count, 
+        member_names,
+        blessing, 
+        iot_core_client
+    )
 ### Do not cross over me, thanks!!!!!!!!!!!!!!
 
     print("transmit IoT Data OK")
